@@ -76,6 +76,3 @@ for nazwa, stemmer in (("Porter", porter), ("Lancaster", lancaster)):
     print(f"znaleziono {len(nied)} lematów; najczęstsze:")
     for lemat, ws, rdzenie, _ in nied[:10]:
         print(f"  lemat {lemat!r:10} formy: {', '.join(ws[:6]):40} rdzenie: {', '.join(rdzenie)}")
-
-print("\nDo sprawozdania wybierz po jednym przykładzie nadmiernego i niedostatecznego obcinania")
-print("z powyższych list (np. dla Porter) i uzasadnij, który stemmer jest sensowniejszy.")

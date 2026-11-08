@@ -64,10 +64,10 @@ w.naglowek("Dlaczego tak?")
 print("""Wspólny początek „Ala ” i końcówka „ kota” zostają bez zmian. Różni się tylko środek:
 „ma” (2 znaki) kontra „posiada” (7 znaków). Żeby z „ma” zrobić „posiada”, trzeba:
   - dodać 7 - 2 = 5 znaków (wstawienia), bo „posiada” jest o 5 znaków dłuższe,
-  - dopasować „ma” do „posiada”: wspólna jest tylko litera „a” (litery „m” w „posiada” nie ma),
-    więc „m” nie ma z czym się zgodzić i musi zostać zamienione na inny znak (1 zamiana).
+  - dopasować „ma” do „posiada”: wspólna jest tylko litera „a”,litery „m” w „posiada” nie ma 
+    więc „m” nie ma z czym się zgodzić i musi zostać zamienione na inny znak więc następuje 1 zamiana.
 Stąd 5 wstawień + 1 zamiana = 6. Mniej się nie da: długości różnią się o 5, a najdłuższy
-wspólny podciąg środka ma tylko jeden znak („a”), więc co najmniej jedna litera musi się zmienić.
+wspólny podciąg środka ma tylko jeden znak „a”, więc co najmniej jedna litera musi się zmienić.
 """)
 
 w.naglowek("Macierz programowania dynamicznego (wiersze: A, kolumny: B)")

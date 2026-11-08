@@ -53,11 +53,3 @@ w.naglowek("6. Histogramy")
 w.wykres_top(uni, "10 najczęstszych unigramów — Pan Tadeusz", "A_unigramy.png")
 w.wykres_top(bi, "10 najczęstszych bigramów — Pan Tadeusz", "A_bigramy.png")
 w.wykres_top(tri, "10 najczęstszych trigramów — Pan Tadeusz", "A_trigramy.png")
-
-# 7. pytania — odpowiedzi uzupełnij po obejrzeniu wyników (patrz sprawozdanie)
-print("""
-7. Pytania do omówienia (odpowiedzi w sprawozdaniu, na podstawie powyższych liczb):
- - Jakie bigramy dominują?  -> sprawdź listę 20 najczęstszych bigramów: czy to same słowa funkcyjne?
- - Czy trigramy pokazują zwroty charakterystyczne dla autora?  -> patrz lista trigramów (powtarzalne formuły).
- - Jak różni się rozkład unigramów od bigramów?  -> porównaj udział 10 najczęstszych i odsetek n-gramów występujących raz.
-""")

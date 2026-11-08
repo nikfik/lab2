@@ -53,8 +53,8 @@ lem_pl = {t.text.lower(): t.lemma_ for t in nlp(" ".join(PL))}
 w.tabela([(s, snow_en.stem(s), lem_pl.get(s.lower(), "?")) for s in PL],
          ["słowo PL", "angielski stem", "lemat (spaCy)"], [18, 18, 16])
 print("""
-Skomentuj: angielski stemmer zna angielskie końcówki (-ing, -ed, -s, -ly ...). Polskie końcówki
-(-ami, -ości, -ą, -ie ...) są mu obce, więc słowa zostają prawie nietknięte albo tracą przypadkową końcówkę;
+angielski stemmer zna angielskie końcówki (-ing, -ed, -s, -ly ...), ale nie zna Polskich
+(-ami, -ości, -ą, -ie ...), więc słowa zostają prawie nietknięte albo tracą przypadkową końcówkę;
 formy tego samego wyrazu (np. 'kotami', 'kota') nie schodzą się do wspólnego rdzenia.""")
 
 # ---- 3. języki Snowballa
@@ -62,6 +62,6 @@ w.naglowek("3. Języki obsługiwane przez SnowballStemmer")
 print(", ".join(SnowballStemmer.languages))
 print("\nczy jest polski?", "polish" in SnowballStemmer.languages)
 print("""
-Komentarz: polskiego brak. Polszczyzna ma bogatą fleksję (7 przypadków, rodzaje, liczby, aspekt, alternacje
-w temacie typu 'ręka/ręce', 'pies/psa'), więc proste obcinanie końcówek za pomocą kilku reguł nie wystarcza —
+brak polskiego smuteg :(
+Polszczyzna ma zbyt dużo odmian pojedyńczych słów, więc proste obcinanie końcówek za pomocą kilku reguł nie wystarcza i
 potrzebny jest słownik fleksyjny albo model (spaCy, Morfeusz, Stempel uczony na parach forma–rdzeń).""")

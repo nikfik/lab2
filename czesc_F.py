@@ -53,6 +53,3 @@ w.naglowek("Para, dla której miary różnią się najbardziej")
 print(f"{a!r} / {b!r}: rozrzut {r:.3f}")
 for n, v in wart.items():
     print(f"  {n:20} {v:.3f}")
-print("""
-Do sprawozdania wyjaśnij przyczynę na podstawie opisu miar (np. wrażliwość na kolejność znaków,
-premia Jaro-Winklera za wspólny początek, ignorowanie kolejności przez Jaccarda).""")

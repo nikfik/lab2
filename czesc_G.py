@@ -51,9 +51,7 @@ for n, nazwa in ((1, "unigramy"), (2, "bigramy"), (3, "trigramy")):
 w.tabela(wiersze, ["n-gram", "razem (z)", "unikalne (z)", "razem (bez)", "unikalne (bez)",
                    "top10 udział (z)", "top10 udział (bez)", "wspólne w top10"],
          [10, 12, 14, 13, 16, 18, 19, 17])
-print("""
-Do sprawozdania: czy różnice są istotne? Wariant Z stop words pokazuje STYL (składnię, spójniki, zaimki),
-wariant BEZ stop words — TREŚĆ (postacie, miejsca, rzeczowniki, czasowniki). Uzasadnij na podstawie list powyżej.""")
+
 
 # ---- 4. nazwy własne wyrażeniem regularnym
 # Wielka litera w ŚRODKU zdania: poprzedza ją mała litera lub przecinek/średnik i spacja w tej samej linii.
@@ -78,7 +76,4 @@ print("\nNastępne 15 (do oceny jakości wyniku):")
 for nazwa, v in licznik.most_common(25)[10:]:
     print(f"  {v:5}  {nazwa}")
 w.wykres_top(licznik, "10 najczęstszych nazw własnych — Pan Tadeusz", "G_nazwy_wlasne.png")
-print("""
-Uwagi do sprawozdania: wyrażenie nie lematyzuje, więc formy jednego imienia (np. Tadeusz / Tadeusza /
-Tadeuszu) liczą się osobno; zdarzają się fałszywe trafienia (np. wyrazy pisane wielką literą z szacunku
-albo po przecinku w cytacie) oraz fałszywe pominięcia (nazwa na początku zdania lub wersu).""")
+

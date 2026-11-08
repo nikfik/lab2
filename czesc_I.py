@@ -71,8 +71,4 @@ with open(w.WYNIKI / "I_porownanie.csv", "w", encoding="utf-8", newline="") as f
     for nazwa, jedn in warianty:
         cw.writerow([nazwa, len(jedn), len(set(jedn))])
 
-print("""
-3. Do sprawozdania — wniosek: który wariant najmocniej zmniejsza słownik i jakim kosztem?
-   Wniosek wyciągnij z tabeli powyżej (nie zakładaj z góry): porównaj kolumny 'słownik vs wyrazy'
-   i 'jednostek vs wyrazy'. Pamiętaj, że tokenizator był uczony na całej książce, a tabela liczy tylko
-   jednostki użyte w fragmencie — rozmiar słownika samego tokenizatora to 5000.""")
+

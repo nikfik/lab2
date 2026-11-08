@@ -1,0 +1,10 @@
+nltk>=3.9
+stop-words>=2018.7.23
+spacy>=3.7
+matplotlib
+textdistance>=4.6
+transformers>=4.40
+tokenizers>=0.19
+sentencepiece>=0.2
+# opcjonalnie — stemmer dla polskiego w części E:
+pystempel
